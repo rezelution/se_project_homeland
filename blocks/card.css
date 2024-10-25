@@ -1,0 +1,163 @@
+.card {
+  display: flex;
+  gap: 40px;
+}
+
+.card__heading {
+  display: flex;
+  gap: 40px;
+  align-items: flex-end;
+}
+
+.card__artists {
+  margin-bottom: 48px;
+  width: 484px;
+}
+
+.card__column-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 1.09;
+  min-width: 460px;
+  max-width: 460px;
+  margin: 0 0 46px 0;
+}
+
+.card__image {
+  width: 460px;
+  object-fit: cover;
+  margin: 0 0 48px 0;
+}
+
+.card__button {
+  width: 248px;
+  height: 48px;
+  background-color: #0278fe;
+  border: none; /* Remove border */
+  color: #fff;
+  cursor: pointer;
+  padding: 0; /* No padding */
+  margin: 0 0 80px;
+  text-align: center; /* Center text */
+  display: block;
+}
+
+.card__button:hover {
+  background-color: #0063d2;
+}
+
+.card__column-left a {
+  display: block; /* Make the link a block element */
+  width: 248px; /* Ensure it matches button width */
+  height: 48px; /* Ensure it matches button height */
+  text-decoration: none; /* Remove underline */
+}
+
+.card__column-right {
+  display: block;
+}
+
+.card__artist {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1.4px;
+  color: #aaa;
+  margin: 0 0 8px 0;
+}
+
+.card__artist-names {
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.card__description {
+  max-width: 484px;
+  font-size: 18px;
+  line-height: 1.63;
+  margin: 0 0 25px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    gap: 28px;
+    margin-bottom: 72px;
+  }
+
+  .card__heading {
+    gap: 28px;
+  }
+  .card__title {
+    font-size: 42px;
+    min-width: 340px;
+  }
+  .card__image {
+    width: 340px;
+  }
+
+  .card__description {
+    max-width: 352px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  .card__heading {
+    display: block;
+    padding: 0 16px 0;
+  }
+  .card__title {
+    font-size: 32px;
+    padding: 0;
+    margin: 0 0 30px;
+  }
+
+  .card__artists {
+    margin-bottom: 30px;
+    width: 484px;
+  }
+
+  .card__artist-names {
+    padding: 0;
+    max-width: 288px;
+  }
+
+  .card__image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .card__description {
+    padding: 0 16px 0;
+    max-width: 100%;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .card__button {
+    width: 288px;
+    height: 48px;
+    padding: 0 16px 0px;
+    margin: 5px auto 50px;
+    font-size: 18px;
+    line-height: auto;
+  }
+
+  .card__column-left a {
+    width: 288px; /* Ensure it matches button width */
+    height: 48px; /* Ensure it matches button height */
+  }
+}

@@ -1,0 +1,43 @@
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 284px);
+  gap: 16px;
+  padding-bottom: 92px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.thumbnail__image {
+  width: 284px;
+  height: 213px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .thumbnails {
+    grid-template-columns: repeat(auto-fit, 352px);
+    gap: 16px;
+    padding-bottom: 88px;
+  }
+
+  .thumbnail__image {
+    width: 352px;
+    height: 264px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .thumbnails {
+    grid-template-columns: repeat(auto-fit, 288px);
+    gap: 12px;
+    padding: 0 16px 0;
+    margin: 0 0 62px;
+  }
+
+  .thumbnail__image {
+    width: 100%;
+  }
+}
