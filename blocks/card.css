@@ -1,8 +1,9 @@
 .card {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat (4, minmax(100px 460));
+  grid-template-rows: repeat (4, 100px);
   column-gap: 40px;
+  margin-bottom: 80px;
 }
 
 .card__title {
@@ -48,7 +49,7 @@
   width: 484px;
   font-size: 18px;
   line-height: 1.63;
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
 .card__button {
@@ -64,6 +65,21 @@
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
+}
+
+.card__button_extra-text {
+  width: 248px;
+  height: 48px;
+  background-color: #0278fe;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0;
+  margin: 48px 0 0;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
 }
 
 .card__button:hover {
